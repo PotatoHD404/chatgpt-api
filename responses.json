@@ -1,50 +1,18 @@
 [
     {
-        "id": "chatcmpl-7DwUtFfZxMyFeMqby7KAeGvwsMxqg",
-        "object": "chat.completion",
-        "created": "08/05/2023 17:51:23",
-        "model": "gpt-4-0314",
-        "usage": {
-            "prompt_tokens": 31,
-            "completion_tokens": 115,
-            "total_tokens": 146
-        },
-        "choices": [
-            {
-                "message": {
-                    "role": "assistant",
-                    "content": "User: Hello AI, how are you today?\n\nAI: Hello! I'm doing great, thank you for asking. How can I help you today?\n\nUser: I'm looking for a unique idea for a birthday gift for my friend. They're really into technology and gadgets. Can you suggest something cool and unusual?\n\nAI: Sure! How about a DIY Raspberry Pi handheld gaming console kit? They can assemble it themselves and enjoy playing retro games on a device they built. It's a fun, engaging, and tech-oriented gift that's sure to appeal to their interests."
-                },
-                "finish_reason": "stop",
-                "index": 0
-            }
-        ],
-        "input_messages": [
-            {
-                "role": "user",
-                "content": "The following is a conversation with an AI assistant.\n     The assistant is helpful, creative, clever, and very friendly."
-            }
-        ],
-        "created_timestamp": 1683557483
-    },
-    {
-        "id": "chatcmpl-7DwPkyqBTItpHHQ9RfcKVdh9CM3Ma",
-        "object": "chat.completion",
-        "created": "08/05/2023 17:46:04",
+        "id": "chatcmpl-7DxJeusGgp1LUZhPRQYqWmAQscWtU",
+        "object": "chat.completion.chunk",
+        "created": "08/05/2023 18:43:50",
         "model": "gpt-3.5-turbo-0301",
-        "usage": {
-            "prompt_tokens": 32,
-            "completion_tokens": 150,
-            "total_tokens": 182
-        },
         "choices": [
             {
                 "message": {
                     "role": "assistant",
-                    "content": "User: Hi there, what can you do?\n\nAI Assistant: Hi! I'm capable of a lot of things- from setting reminders to getting the weather to helping you write an essay. What can I help you with today?\n\nUser: I need help writing an essay about climate change.\n\nAI Assistant: Sure thing! What is your main focus for the essay? Are you trying to talk about the causes of climate change, the impacts, or something else?\n\nUser: I want to address the impacts of climate change on natural ecosystems.\n\nAI Assistant: Great topic! We can start by discussing the effects of global warming on different biomes, such as the melting of glaciers, increased frequency of wildfires, and changes in precipitation patterns. From there, we"
+                    "content": "User: Hi, can you help me find a recipe for dinner tonight?\n\nAI Assistant: Of course! What are you in the mood for? Any dietary restrictions or preferences?\n\nUser: Hmm, I want something healthy and easy to make. Maybe a vegetarian option?\n\nAI Assistant: How about a quinoa and vegetable stir-fry? It's packed with nutrients and flavor, and you can substitute any veggies you prefer. Here's the recipe: \n\nIngredients:\n- 1 cup quinoa\n- 2 cups water\n- 2 tablespoons olive oil\n- 1 onion, diced\n- 3 garlic cloves, minced\n- 2 cups chopped vegetables (such as red bell pepper, broccoli, snap peas, and carrots)\n- ",
+                    "finish_reason": "length"
                 },
-                "finish_reason": "length",
-                "index": 0
+                "index": 0,
+                "finish_reason": null
             }
         ],
         "input_messages": [
@@ -53,6 +21,6 @@
                 "content": "The following is a conversation with an AI assistant.\n     The assistant is helpful, creative, clever, and very friendly."
             }
         ],
-        "created_timestamp": 1683557164
+        "created_timestamp": 1683560630
     }
 ]
