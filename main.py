@@ -26,10 +26,11 @@ def read_json(filename):
 if __name__ == "__main__":
     prompt = """The following is a conversation with an AI assistant.
      The assistant is helpful, creative, clever, and very friendly."""
-    model = "gpt-3.5-turbo"
+    model = "gpt-4"
     messages = [
         {"role": "user", "content": prompt}
     ]
+    # https://platform.openai.com/docs/api-reference/chat/create
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
@@ -47,6 +48,7 @@ if __name__ == "__main__":
     response['input_messages'] = messages
     response['created_timestamp'] = timestamp
     response['created'] = dt_string
-    responses.append(response)
+    # prepend response to list
+    responses.insert(0, response)
     # save responses to file
     save_json('responses.json', responses)
