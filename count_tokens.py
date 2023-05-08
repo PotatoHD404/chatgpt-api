@@ -10,7 +10,8 @@ def num_tokens_from_string(string: str, model_name: str) -> int:
 
 
 def main():
-    prompt = """"""
+    prompt = """The following is a conversation with an AI assistant.
+     The assistant is helpful, creative, clever, and very friendly."""
     print(num_tokens_from_string(prompt, "gpt-3.5-turbo"))
 
 
